@@ -2,6 +2,9 @@
     padding: 0px;
     margin: 0px;
 }
+body{
+    background-color: black;
+}
 #top1{
     color: rgb(223, 108, 20);
     text-align: center;
@@ -12,29 +15,25 @@
     text-align: center;
     font-size: 20px;
     font-family: 'Ubuntu Mono', monospace;
-}
-#line {
-    border: 2px solid rgb(132, 119, 119);
+    color: white;
 }
 .navbar{
-    background-color: rgb(125, 122, 122);
+    background-color: black;
     display: flex;
     flex-direction: column;
     margin-top: 20px;
-    height: 11vh;
-    width: 100%;
-    border: 2px solid black;
-    border-radius: 0px;
+    height: 9vh;
+    width: 100vw;
+    border: 3px solid #ffffff;
 }
 ul{
     display: flex;
     justify-content: center;
-    margin-top: -28px;
+   
 }
 ul li{
     list-style: none;
-    margin: 56px;
-    border-radius: 20px;
+    margin: 18px;
     font-size: 20px;
 }
 ul li a{
@@ -47,6 +46,7 @@ ul li a{
     background: url(flame-grilled-meat-cooking-flames-generative-ai.jpg) no-repeat center center/cover;
     width: 100vw;
     height: 62vh;
+    margin-top: 15px;
     border-bottom-left-radius: 100px;
     border-bottom-right-radius: 100px;
 }
@@ -119,8 +119,9 @@ ul li a{
     margin-top: 80px;
 }
 #line2{
-    margin-top: 10px;
+    margin-top: 15px;
     border: 2px solid rgb(132, 119, 119);
+    width: 100vw;
 }
 #bottom1{
     margin-top: 15px;
@@ -129,14 +130,15 @@ ul li a{
     color: rgb(223, 108, 20);
     font-family: 'Ubuntu Mono', monospace;
 }
-.conatiner3{
-    display: flex;
-    justify-content: space-around;
+.container3{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    margin: 41px;
 }
 #food1{
     background: url(pizzza.jpg.jpg) no-repeat center center/cover;
-    width: 300px;
-    height: 300px;
+    width: 29vw;
+    height: 360px;
     border-radius: 50px;
     display: flex;
     justify-content: center;
@@ -145,8 +147,8 @@ ul li a{
 }
 #food2{
     background: url(butter\ chicken.jpg.jpg) no-repeat center center/cover;
-    width: 300px;
-    height: 300px;
+    width: 29vw;
+    height: 360px;
     border-radius: 50px;
     display: flex;
     justify-content: center;
@@ -155,8 +157,8 @@ ul li a{
 }
 #food3{
     background: url(bg.jpg.jpg) no-repeat center center/cover;
-    width: 300px;
-    height: 300px;
+    width: 29vw;
+    height: 360px;
     border-radius: 50px;
     display: flex;
     justify-content: center;
@@ -168,29 +170,30 @@ a:hover{
 }
 ul li a:hover{
     background-color: transparent;
-    color: black;
+    font-size: 1.3rem;
     text-decoration: underline;
 }
-.container{
-    margin-left: 550px;
+#contactus{
+    margin-top: 0px;
+    height: 100vh;
+    width: 100vw;
     color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    font-size: 20px;
 }
-#mainheading{
-    text-align: center;
-    margin-bottom: 30px;
-    color: white;
+.form-shape input, .form-shape textarea, .form-shape select{
+    width: 92%;
+    padding: 0.5rem;
+    margin-top: 2px;
 }
-#headingq{
-    margin-top: 10px;
-    margin-bottom: 5px;
+form{
+    margin-top: 25px;
+
 }
-#querybox{
-    width: 400px;
-    height: 30px;
-}
-#cc{
-    margin-top: 5px;
-}
+
 .bn16 {
     font-family: lato,sans-serif;
     font-weight: bold;
@@ -204,15 +207,68 @@ ul li a:hover{
     border: 3px solid #ffffff;
     border-radius: 25px;
     margin-top: 20px;
-  }
-#submitbutton{
-    display: flex;
-    justify-content: center;
 }
-#submitbutton a:hover{
-    background-color: gray;
+@media only screen and (max-width:1131px){
+    #row4{
+        width: 42vw;
+    }
+    #row5{
+        width:45vw;
+    }
+    #row6{
+        margin-top: 20px;
+        width:90vw;
+    }
 }
-textarea{
-    width: 400px;
-    height: 70px;
+@media only screen and (min-width:600px) and (max-width:781px)
+{
+    #food1{
+        width:84vw;
+        margin: auto;
+        margin-left: 22px;
+    }
+    #food2{
+        
+        width:84vw;
+        margin: auto;
+        margin-top: 20px;
+        margin-left: 22px;
+    }
+    #food3{
+        width:84vw;
+        margin: auto;
+        margin-top: 20px;
+        margin-left: 22px;
+    }
+}
+@media only screen and (max-width:600px){
+    #food1{
+        width:78vw;
+        margin: auto;
+        margin-left: 3px;
+    }
+    #food2{
+        
+        width:78vw;
+        margin: auto;
+        margin-top: 20px;
+        margin-left: 3px;
+    }
+    #food3{
+        width:78vw;
+        margin: auto;
+        margin-top: 20px;
+        margin-left: 3px;
+    }
+}
+@media only screen and (min-height:1000px){
+    #navbar{
+        height:10vh;
+    }
+    #container1::before{
+        height:39vh;
+    }
+    #container1{
+        height:44vh
+    }
 }
