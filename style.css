@@ -216,23 +216,3 @@ textarea{
     width: 400px;
     height: 70px;
 }
-@media only screen and (max-width:600px){
-    #food1{
-        width:78vw;
-        margin: auto;
-        margin-left: 3px;
-    }
-    #food2{
-        
-        width:78vw;
-        margin: auto;
-        margin-top: 20px;
-        margin-left: 3px;
-    }
-    #food3{
-        width:78vw;
-        margin: auto;
-        margin-top: 20px;
-        margin-left: 3px;
-    }
-}
