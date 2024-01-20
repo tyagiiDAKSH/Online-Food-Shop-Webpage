@@ -6,32 +6,58 @@
     <title>Contact Us</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body style="background-color: black;">
-    <h1 id="mainheading">Contact Us</h1>
-    <div class="container">
-    <h3 id="headingq">Type Of Query</h3>
-    <input id="querybox" type="text" placeholder="Typer Your Query">
-    <h3 id="headingq">Name</h3>
-    <input id="querybox" type="text" placeholder="Typer Your Name">
-    <h3 id="headingq">Email Id</h3>
-    <input id="querybox" type="text" placeholder="Typer Your Email id">
-    <h3 id="headingq">Phone Number</h3>
-    <input id="querybox" type="text" placeholder="Typer Your Phone Number">
-    <h3 id="headingq">Are You a Member of Online Food Shop</h3>
-    <label for="101">
-    <input id="cc" type="radio" value="Yes" name="option" id="101">Yes
-</label>
-<label for="102">
-    <input id="cc" type="radio" value="No" name="option" id="102">No
-</label>
-    <h3 id="headingq">Elaborate Your Query</h3>
-    <label for="101">
-    <textarea name="feedback" placeholder="Please Elaborate Your Concern" id="101" row="5"></textarea>
-</label>
-</div>
-<div id="submitbutton">
-<a href="/" class="bn16">Submit</a>
-</div>
-
+<body>
+    <div id="contactus">
+        <h1>Contact Us</h1>
+        <form>
+        <div class="form-shape">
+            <label for="Query">Type Your Query</label>
+            <select name="myQuery" id="Query">
+                <option value="ord">
+                    Order Related Queries
+                </option>
+                <option value="ste">
+                    Site Related Queries
+                </option>
+                <option vale="Com">
+                    Complaint Related Queries
+                </option>
+                <option value="oth">Others</option>
+            </select>
+        </div>
+        <div class="form-shape">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Enter Your Name">
+        </div>
+        <div class="form-shape">
+            <label for="email">Email</label>
+            <input type="text"  id="email" placeholder="Enter Your Email">
+        </div>
+        <div class="form-shape">
+            <label for="phno">Phone Number</label>
+            <input type="textt" id="phno" placeholder="Enter Your Phone Number">
+        </div>
+        <div class="radio">
+            <P>Are You a Member of Online Food Shop</p>
+            <label for="101">
+                <input type="radio" value="CLASS XI" name="CLASS" id="101" />Yes
+            </label>
+            <label for="102">
+                <input type="radio" value="CLASS XII" name="CLASS" id="102"  />No
+            </label>
+        </div>
+        <div class="form-shape"> 
+            <label for="message"> 
+                Ellaborate your query 
+            </label> 
+            <textarea name="mesg" id="message" 
+                cols="30" rows="5"> 
+            </textarea> 
+        </div>
+            <div id="submitbutton">
+            <a href="/" class="bn16">Submit</a>
+            </div>
+        </div>
+     </form>
 </body>
 </html>
